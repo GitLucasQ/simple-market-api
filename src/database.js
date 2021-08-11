@@ -3,7 +3,8 @@ import mongoose from 'mongoose'
 mongoose.connect('mongodb://localhost/marketstore', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false
+    useFindAndModify: false,
+    useCreateIndex: true
 })
     .then(db => console.log('DB connection succesfully'))
     .catch(err => {

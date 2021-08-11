@@ -6,13 +6,13 @@ export const getAllProducts = async (req, res) => {
 }
 
 export const getProductById = async (req, res) => {
-    const productFinded = await Product.findById(req.params.productId)
-    res.json(productFinded)
+    const findedProduct = await Product.findById(req.params.productId)
+    res.json(findedProduct)
 }
 
 export const createProduct = async (req, res) => {
     const { name, price, category, subCategory, imgUrl } = req.body
-    const newProduct = await new Product({
+    const createdProduct = await new Product({
         name,
         price,
         category,
@@ -20,14 +20,14 @@ export const createProduct = async (req, res) => {
         imgUrl
     }).save()
 
-    res.status(201).json(newProduct)
+    res.status(201).json(createdProduct)
 }
 
 export const updateProduct = async (req, res) => {
-    const productUpdated = await Product.findByIdAndUpdate(req.params.productId, req.body, {
+    const updatedProduct = await Product.findByIdAndUpdate(req.params.productId, req.body, {
         new: true
     })
-    res.status(200).json(productUpdated)
+    res.status(200).json(updatedProduct)
 }
 
 export const deleteProduct = async (req, res) => {

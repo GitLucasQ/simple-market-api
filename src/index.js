@@ -2,6 +2,7 @@ import express from 'express'
 const config = require('./config')
 const cors = require('cors')
 import productsRoutes from './routes/products.routes'
+import authRoutes from './routes/auth.routes'
 import './database'
 
 
@@ -15,10 +16,8 @@ app.use(cors())
 app.use(express.json())
 
 // ROUTES
-app.get('/', (req, res) => {
-    res.send('Its works!!')
-})
 app.use(`/products`, productsRoutes)
+app.use('/auth', authRoutes)
 
 
 
