@@ -6,11 +6,13 @@
   "scripts": {
     "build": "babel src --out-dir build",
     "start": "node build/index.js",
-    "dev": "nodemon src/index.js --exec babel-node"
+    "dev": "nodemon src/index.js --exec babel-node",
+    "test": "mocha --require @babel/register tests --exit"
   },
   "author": "Luis Reyes Quino",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.15.3",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
@@ -24,6 +26,8 @@
     "@babel/cli": "^7.14.8",
     "@babel/core": "^7.15.0",
     "@babel/node": "^7.14.9",
-    "@babel/preset-env": "^7.15.0"
+    "@babel/preset-env": "^7.15.0",
+    "mocha": "^9.1.0",
+    "supertest": "^6.1.6"
   }
 }

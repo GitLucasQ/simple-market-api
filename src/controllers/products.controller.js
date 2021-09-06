@@ -10,13 +10,19 @@ export const getProductById = async (req, res) => {
     res.json(findedProduct)
 }
 
+export const getProductByCategory = async (req, res) => {
+    const findedProducts = await Product.find({ 'category': req.params.category })
+    res.json(findedProducts)
+}
+
 export const createProduct = async (req, res) => {
-    const { name, price, category, subCategory, imgUrl } = req.body
+    const { name, price, category, brand, stock, imgUrl } = req.body
     const createdProduct = await new Product({
         name,
         price,
         category,
-        subCategory,
+        brand,
+        stock,
         imgUrl
     }).save()
 
@@ -33,4 +39,9 @@ export const updateProduct = async (req, res) => {
 export const deleteProduct = async (req, res) => {
     await Product.findByIdAndDelete(req.params.productId)
     res.status(204).json('product deleted')
+}
+
+export const getCategories = async (req, res) => {
+    const categories = await Product.distinct('category')
+    res.status(200).json(categories)
 }

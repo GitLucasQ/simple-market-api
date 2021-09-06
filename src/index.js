@@ -25,3 +25,5 @@ app.use('/auth', authRoutes)
 app.listen(port, () => {
     console.log(`Server listen on port ${port}`)
 })
+
+module.exports = app

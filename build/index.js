@@ -26,3 +26,4 @@ app.use('/auth', _auth["default"]);
 app.listen(port, function () {
   console.log("Server listen on port ".concat(port));
 });
+module.exports = app;

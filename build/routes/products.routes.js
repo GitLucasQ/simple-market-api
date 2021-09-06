@@ -20,8 +20,10 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 var router = (0, _express.Router)();
 router.get('/allProducts', productsController.getAllProducts);
 router.get('/findProduct/:productId', productsController.getProductById);
+router.get('/findProductsByCategory/:category', productsController.getProductByCategory);
 router.post('/createProduct', _middlewares.validateToken, productsController.createProduct);
 router.put('/updateProduct/:productId', _middlewares.validateToken, productsController.updateProduct);
 router["delete"]('/deleteProduct/:productId', _middlewares.validateToken, productsController.deleteProduct);
+router.get('/getCategories', productsController.getCategories);
 var _default = router;
 exports["default"] = _default;

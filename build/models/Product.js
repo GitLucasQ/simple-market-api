@@ -11,7 +11,7 @@ var productSchema = new _mongoose.Schema({
   name: String,
   price: Number,
   category: String,
-  subCategory: String,
+  brand: String,
   stock: Number,
   imgUrl: String
 }, {
