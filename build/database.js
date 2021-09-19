@@ -4,7 +4,9 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 
 var _mongoose = _interopRequireDefault(require("mongoose"));
 
-_mongoose["default"].connect('mongodb://localhost/marketstore', {
+var _config = require("./config");
+
+_mongoose["default"].connect(_config.URL_DATABASE, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,

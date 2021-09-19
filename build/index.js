@@ -23,7 +23,7 @@ app.use(_express["default"].json()); // ROUTES
 
 app.use("/products", _products["default"]);
 app.use('/auth', _auth["default"]);
-app.listen(port, function () {
+app.listen(port || 7000, function () {
   console.log("Server listen on port ".concat(port));
 });
 module.exports = app;
