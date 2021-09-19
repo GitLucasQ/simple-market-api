@@ -1,5 +1,7 @@
 "use strict";
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
 var _express = _interopRequireDefault(require("express"));
 
 var _products = _interopRequireDefault(require("./routes/products.routes"));
@@ -7,8 +9,6 @@ var _products = _interopRequireDefault(require("./routes/products.routes"));
 var _auth = _interopRequireDefault(require("./routes/auth.routes"));
 
 require("./database");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var config = require('./config');
 
