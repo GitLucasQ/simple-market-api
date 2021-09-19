@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/routes/user.routes.js"],"names":["router"],"mappings":";;;;;;;AAAA;;AAEA,IAAMA,MAAM,GAAG,sBAAf;eAEeA,M","sourcesContent":["import { Router } from 'express'\n\nconst router = Router()\n\nexport default router;"],"file":"user.routes.js"}

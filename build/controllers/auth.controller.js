@@ -144,3 +144,4 @@ var signUp = /*#__PURE__*/function () {
 }();
 
 exports.signUp = signUp;
+//# sourceMappingURL=auth.controller.js.map

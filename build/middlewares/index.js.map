@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/middlewares/index.js"],"names":[],"mappings":";;;;;;;;;;;;AAAA","sourcesContent":["import { validateToken } from './ValidateToken'\n\nexport { validateToken }"],"file":"index.js"}

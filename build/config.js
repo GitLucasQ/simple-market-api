@@ -7,3 +7,4 @@ module.exports = {
   SECRET_TOKEN: process.env.SECRET_TOKEN,
   URL_DATABASE: process.env.URL_DATABASE
 };
+//# sourceMappingURL=config.js.map

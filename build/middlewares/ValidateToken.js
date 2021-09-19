@@ -54,3 +54,4 @@ var validateToken = /*#__PURE__*/function () {
 }();
 
 exports.validateToken = validateToken;
+//# sourceMappingURL=ValidateToken.js.map

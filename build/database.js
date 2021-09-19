@@ -16,3 +16,4 @@ _mongoose["default"].connect(_config.URL_DATABASE, {
 })["catch"](function (err) {
   console.log(err);
 });
+//# sourceMappingURL=database.js.map

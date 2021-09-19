@@ -22,3 +22,4 @@ var productSchema = new _mongoose.Schema({
 var _default = (0, _mongoose.model)('Product', productSchema);
 
 exports["default"] = _default;
+//# sourceMappingURL=Product.js.map

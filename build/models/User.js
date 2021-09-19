@@ -90,3 +90,4 @@ userSchema.statics.validatePassword = /*#__PURE__*/function () {
 var _default = (0, _mongoose.model)('User', userSchema);
 
 exports["default"] = _default;
+//# sourceMappingURL=User.js.map

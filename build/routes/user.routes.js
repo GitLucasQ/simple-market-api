@@ -10,3 +10,4 @@ var _express = require("express");
 var router = (0, _express.Router)();
 var _default = router;
 exports["default"] = _default;
+//# sourceMappingURL=user.routes.js.map

@@ -27,3 +27,4 @@ router["delete"]('/deleteProduct/:productId', _middlewares.validateToken, produc
 router.get('/getCategories', productsController.getCategories);
 var _default = router;
 exports["default"] = _default;
+//# sourceMappingURL=products.routes.js.map

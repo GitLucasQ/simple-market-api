@@ -22,3 +22,4 @@ var createToken = function createToken(idUser) {
 };
 
 exports.createToken = createToken;
+//# sourceMappingURL=Token.js.map

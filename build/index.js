@@ -27,3 +27,4 @@ app.listen(port || 7000, function () {
   console.log("Server listen on port ".concat(port));
 });
 module.exports = app;
+//# sourceMappingURL=index.js.map

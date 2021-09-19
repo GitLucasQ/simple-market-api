@@ -226,3 +226,4 @@ var getCategories = /*#__PURE__*/function () {
 }();
 
 exports.getCategories = getCategories;
+//# sourceMappingURL=products.controller.js.map
