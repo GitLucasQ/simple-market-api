@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
+import { URL_DATABASE } from './config'
 
-mongoose.connect('mongodb://localhost/marketstore', {
+mongoose.connect(URL_DATABASE, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
