@@ -22,7 +22,7 @@ app.use('/auth', authRoutes)
 
 
 
-app.listen(port, () => {
+app.listen(port || 7000, () => {
     console.log(`Server listen on port ${port}`)
 })
 
